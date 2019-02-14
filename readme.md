@@ -19,3 +19,10 @@ We have technologies such as [Docker](https://www.docker.com/) to thank for in a
 - Update - 02/14/2019:
 
 > Here we will be implementing the Front-End aspect with [ReactJS](https://reactjs.org/) and [Apollo](https://www.apollographql.com/). In the previous repo I worked on the Back-End first due to prior knowledge of [Node.js](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/). I eventually ran into problems of setting up due to outdated guides for the initial version of Apollo though.
+
+> For the Back-End to supply temporary data for usage & setup, we will be using a [starter-server-package](https://codeload.github.com/howtographql/react-apollo/tar.gz/starter).
+
+## Credits & Mentions:
+
+- [Prisma Team](https://www.howtographql.com/)
+> Thanks for providing a great resource on getting started with Apollo and GraphQL!
