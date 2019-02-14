@@ -16,7 +16,7 @@ const FEED_QUERY = gql`
   }
 `
 
-class LinkList extends Component {
+export default class LinkList extends Component {
     render() {
 
         return (
@@ -38,5 +38,3 @@ class LinkList extends Component {
         )
     }
 }
-
-export default LinkList

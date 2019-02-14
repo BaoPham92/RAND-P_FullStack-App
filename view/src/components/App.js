@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
+import CreateLink from './CreateLink'
 import LinkList from './LinkList'
 import '../styles/App.css'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className='App'>
       <h1>Temporary Placeholder</h1>
-      <LinkList/>
+        <CreateLink />
       </div>
     );
   }
 }
-
-export default App;
