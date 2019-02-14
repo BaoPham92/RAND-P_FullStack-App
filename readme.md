@@ -14,6 +14,16 @@ We have technologies such as [Docker](https://www.docker.com/) to thank for in a
 
 ---
 
+## Instructions:
+
+- Back-End
+> 1. cd server & yarn install
+> 2. yarn prisma deploy (Choose demo server (demo-eu1 or demo-us1))
+> 3. yarn start
+> 4. navigate to http://localhost:4000/ to see GraphQL Playground for querying & mutations.
+
+---
+
 ## Progress
 
 - Update - 02/14/2019:
