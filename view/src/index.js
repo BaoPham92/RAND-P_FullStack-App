@@ -3,8 +3,27 @@ import ReactDOM from 'react-dom'
 import './styles/index.css'
 import App from './components/App'
 import * as serviceWorker from './serviceWorker'
+import { ApolloProvider } from 'react-apollo'
+import { ApolloClient } from 'apollo-client'
+import { createHttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+// GraphQL API (Back-End) connected to GraphQL server
+const httpLink = createHttpLink({
+    uri: 'http://localhost:4000'
+})
+
+// Apollo-React (Front-End) client for enabling querying & mutations on.
+const client = new ApolloClient({
+    link: httpLink,
+    cache: new InMemoryCache()
+})
+
+ReactDOM.render(
+<ApolloClient client={client}>
+    <App />
+</ApolloClient>
+, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
