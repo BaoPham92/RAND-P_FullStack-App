@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div className='App'>
       <h1>Temporary Placeholder</h1>
+      <LinkList/>
       </div>
     );
   }

@@ -20,9 +20,9 @@ const client = new ApolloClient({
 })
 
 ReactDOM.render(
-<ApolloClient client={client}>
+<ApolloProvider client={client}>
     <App />
-</ApolloClient>
+</ApolloProvider>
 , document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
