@@ -2,9 +2,7 @@
   "name": "rand_p-prism",
   "version": "1.0.0",
   "description": "sandbox application integrating GrapQl with Prism for the back-end.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "prisma": "prisma"
   },
@@ -16,7 +14,5 @@
   },
   "devDependencies": {
     "prisma": "^1.23.0"
-  },
-  "author": "BaoPham92",
-  "license": "ISC"
+  }
 }

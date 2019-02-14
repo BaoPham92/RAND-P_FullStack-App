@@ -1,6 +1,6 @@
 # Specifies the HTTP endpoint of your Prisma API.
 #endpoint: ''
-endpoint: https://eu1.prisma.sh/bao-pham-c824d6/test-1/GraphQL_Prisma_Test1
+endpoint: https://us1.prisma.sh/bao-pham-c824d6/test/Dev-Test
 
 # Defines your models, each model is mapped to the database as a table.
 datamodel: datamodel.prisma
