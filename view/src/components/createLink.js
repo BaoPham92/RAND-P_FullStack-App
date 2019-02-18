@@ -37,6 +37,7 @@ export default class CreateLink extends Component {
                         value={url}
                         onChange={e => this.setState({ url: e.target.value })}
                     />
+                    
                 </div>
                     <Mutation mutation={POST_MUTATION} 
                     variables={{description, url}}
