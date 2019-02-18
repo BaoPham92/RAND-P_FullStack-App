@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { AUTH_TOKEN } from '../constants'
-import Mutation from 'react-apollo'
+import { Mutation } from 'react-apollo'
 import gql from 'graphql-tag'
 
 const SIGNUP_MUTATION = gql`
@@ -61,15 +61,14 @@ class Login extends Component {
                     variables={{ email, password, name }}
                     onCompleted={ data => this._confirm(data)}>
                         {mutation => (
-                            <div className="pointer mr2 button" onClick={() => this._confirm()}>
+                            <div className="pointer mr2 button" onClick={mutation}>
                                 {login ? 'login' : 'create account'}
                             </div>
                         )}
                     </Mutation>
                     <div
                         className="pointer button"
-                        onClick={() => this.setState({ login: !login })}
-                    >
+                        onClick={() => this.setState({ login: !login })}>
                         {login
                             ? 'need to create an account?'
                             : 'already have an account?'}
@@ -79,7 +78,7 @@ class Login extends Component {
         )
     }
 
-    _confirm = async () => {
+    _confirm = async data => {
         const { token } = this.state.login ? data.login : data.signup
         this._saveUserData(token)
         this.props.history.push(`/`)
