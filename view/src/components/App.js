@@ -12,7 +12,6 @@ export default class App extends Component {
     return (
       <div className='center w85'>
       <Header />
-      <h1>Temporary Placeholder</h1>
         <div className='ph3 pv1 background-gray'>
 
         <Switch>
