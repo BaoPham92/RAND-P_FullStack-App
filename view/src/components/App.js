@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Router, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import '../styles/App.css'
 
 // Components
@@ -10,10 +10,18 @@ import Header from './Header'
 export default class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div className='center w85'>
+      <Header />
       <h1>Temporary Placeholder</h1>
-        <CreateLink />
+        <div className='ph3 pv1 background-gray'>
+
+        <Switch>
+            <Route exact path='/' component={LinkList} />
+            <Route exact path='/create' component={CreateLink} />
+        </Switch>
+
+        </div>
       </div>
-    );
+    )
   }
 }
