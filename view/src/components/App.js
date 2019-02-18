@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
+import { Router, Switch } from 'react-router-dom'
+import '../styles/App.css'
+
+// Components
 import CreateLink from './CreateLink'
 import LinkList from './LinkList'
-import '../styles/App.css'
+import Header from './Header'
 
 export default class App extends Component {
   render() {
