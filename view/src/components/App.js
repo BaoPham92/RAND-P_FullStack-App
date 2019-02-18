@@ -6,6 +6,7 @@ import '../styles/App.css'
 import CreateLink from './CreateLink'
 import LinkList from './LinkList'
 import Header from './Header'
+import Login from './Login'
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends Component {
         <Switch>
             <Route exact path='/' component={LinkList} />
             <Route exact path='/create' component={CreateLink} />
+            <Route exact path="/login" component={Login} />
         </Switch>
 
         </div>
