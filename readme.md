@@ -13,6 +13,14 @@ Why then? Documentation as I have come to learn as approaching new methods, tech
 We have technologies such as [Docker](https://www.docker.com/) to thank for in assisting / preventing such unwanted learning curves.
 
 ---
+## Tech Stack Used:
+- [ReactJS](https://reactjs.org/)
+- [NodeJS](https://nodejs.org/en/)
+- [Apollo](https://www.apollographql.com/)
+- [GraphQL](https://graphql.org/)
+- [Prism](https://www.prisma.io/blog/introducing-prisma-1ff423fd629e)
+
+---
 
 ## Instructions:
 
