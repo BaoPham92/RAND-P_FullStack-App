@@ -40,6 +40,10 @@ We have technologies such as [Docker](https://www.docker.com/) to thank for in a
 
 > For the Back-End to supply temporary data for usage & setup, we will be using a [starter-server-package](https://codeload.github.com/howtographql/react-apollo/tar.gz/starter).
 
+- Update - 02/18/2019:
+
+> Here I have caught up with templating the Front-End part with [ReactJS](https://reactjs.org/) and [Apollo](https://www.apollographql.com/). Next I will attempt to restructure the Back-End so I can write authentications matching the middleware added for the Front-End of our client.
+
 ## Credits & Mentions:
 
 - [Prisma Team](https://www.howtographql.com/)
